@@ -5,61 +5,64 @@
 	font-family: Lato, sans-serif;
 }
 
-.page-purpose {
+.page__purpose {
 	width: 500px;
 	margin: 0 auto;
 	display: block;
 	text-align: right;
 }
 
-.eisenhower-matrix {
+.page__eisenhower-matrix {
 	width: 100%;
 }
 
-.more-inf {
+.page__more-inf {
 	font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-	.page-purpose {
+	.page__purpose {
 		text-align: center;
 	}
 
 }
 
-.todo-container {
+.page__todo {
 	display: block;
 	width: 500px;
 	margin: 0 auto 0;
 }
 
-.task {
+.element__task,
+.add__task {
 	width: 56%;
 	display: inline-block;
 	flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task__add {
 	display: flex;
 }
 
-.list {
+.todo__list {
 	margin: 0;
 	padding: 0px;
 }
 
-.list-element,
-.todo-header {
+.list__element,
+.todo__header {
 	list-style: none;
 }
 
 .each-input,
-.todo-button {
+.element__button,
+.add__button {
 	outline: none;
 }
 
-.todo-button {
+.element__button,
+.add__button {
 	background: none;
 	border: 0px;
 	color: #888;
@@ -69,13 +72,13 @@
 	cursor: pointer;
 }
 
-.todo-button:hover {
+.element__button:hover, .add__button:hover {
 	color: #3a3A3a;
 }
 
 /* Heading */
-.todo-header,
-.new-task-label {
+.todo__header,
+.new-task__label {
 	color: #333;
 	font-weight: 700;
 	font-size: 15px;
@@ -103,7 +106,7 @@
 }
 
 /* New Task */
-.new-task-label {
+.new-task__label {
 	display: block;
 	margin: 0 0 20px;
 }
@@ -113,7 +116,7 @@
 }
 
 /* Task list */
-.list-element {
+.list__element {
 	overflow: hidden;
 	padding: 20px 0;
 	border-bottom: 1px solid #eee;
@@ -122,32 +125,32 @@
 	align-items: center;
 }
 
-.list-element > * {
+.list__element > * {
 	vertical-align: middle;
 }
 
-.list-element > .checkbox-input {
+.list__element > .element__checkbox-input {
 	margin: 0 10px;
 }
 
-.list-element > .input-label {
+.list__element > .input-label {
 	padding-left: 10px;
 	box-sizing: border-box;
 	font-size: 18px;
 	width: 226px;
 }
 
-.list-element > .text-input {
+.list__element > .text-input {
 	width: 226px;
 }
 
-.delete img {
+.button__image {
 	height: 2em;
 	transform: rotateZ(45deg);
 	transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.button__image:hover {
 	transform: rotateZ(0);
 }
 
@@ -158,11 +161,11 @@
 }
 
 /* Edit Task */
-.list .list-element .text-input, .list .edit-mode .input-label {
+.list__element .text-input, .edit-mode .input-label {
 	display: none;
 }
 
-.list .edit-mode .text-input {
+.edit-mode .text-input {
 	display: inline-block;
 	width: 224px;
 }
