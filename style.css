@@ -5,37 +5,37 @@
   font-family: Lato, sans-serif;
 }
 
-.page__purpose {
+.purpose {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.page__eisenhower-matrix {
+.purpose__eisenhower-matrix {
   width: 100%;
 }
 
-.page__more-inf {
+.purpose__more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .page__purpose {
+  .purpose__purpose {
     text-align: center;
   }
 
 }
 
-.page__todo {
+.todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.element__task,
-.add__task {
+.list__task,
+.new-task__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -45,24 +45,24 @@
   display: flex;
 }
 
-.todo__list {
+.list {
   margin: 0;
   padding: 0px;
 }
 
 .list__element,
-.todo__header {
+.header {
   list-style: none;
 }
 
 .each-input,
-.element__button,
-.add__button {
+.list__button,
+.new-task__button {
   outline: none;
 }
 
-.element__button,
-.add__button {
+.list__button,
+.new-task__button {
   background: none;
   border: 0px;
   color: #888;
@@ -72,12 +72,12 @@
   cursor: pointer;
 }
 
-.element__button:hover, .add__button:hover {
+.list__button:hover, .new-task__button:hover {
   color: #3a3A3a;
 }
 
 /* Heading */
-.todo__header,
+.header,
 .new-task__label {
   color: #333;
   font-weight: 700;
@@ -129,7 +129,7 @@
   vertical-align: middle;
 }
 
-.list__element > .element__checkbox-input {
+.list__element > .list__checkbox-input {
   margin: 0 10px;
 }
 

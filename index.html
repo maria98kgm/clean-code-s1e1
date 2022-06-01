@@ -6,45 +6,45 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body class="page">
-  <header class="page__purpose">
-    <img class="page__eisenhower-matrix" src="./eisenhower-matrix.jpg" alt="eisenhower matrix">
-    <a class="page__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  <header class="purpose">
+    <img class="purpose__eisenhower-matrix" src="./eisenhower-matrix.jpg" alt="eisenhower matrix">
+    <a class="purpose__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
-  <main class="page__todo">
-    <section class="todo__new-task">
+  <main class="todo">
+    <section class="new-task">
       <br/>
       <label class="new-task__label input-label" for="new-task">Add Item</label>
       <div class="new-task__add">
-        <input class="add__task text-input each-input" id="new-task" type="text">
-        <button class="add__button">Add</button>
+        <input class="new-task__task text-input each-input" id="new-task" type="text">
+        <button class="new-task__button">Add</button>
       </div>
       <br/>
     </section>
-    <h3 class="todo__header">Todo</h3>
-    <ul class="todo__list incomplete-tasks">
+    <h3 class="header">Todo</h3>
+    <ul class="list incomplete-tasks">
       <li class="list__element">
-        <input class="element__checkbox-input each-input" type="checkbox">
-        <label class="element__task input-label">Pay Bills</label>
-        <input class="element__task text-input each-input" type="text">
-        <button class="element__button edit">Edit</button>
-        <button class="element__button delete"><img class="button__image" src="./remove.svg" alt="delete button"></button>
+        <input class="list__checkbox-input each-input" type="checkbox">
+        <label class="list__task input-label">Pay Bills</label>
+        <input class="list__task text-input each-input" type="text">
+        <button class="list__button edit">Edit</button>
+        <button class="list__button delete"><img class="button__image" src="./remove.svg" alt="delete button"></button>
       </li>
       <li class="list__element edit-mode">
-        <input class="element__checkbox-input each-input" type="checkbox">
-        <label class="element__task input-label">Go Shopping</label>
-        <input class="element__task text-input each-input" type="text" value="Go Shopping">
-        <button class="element__button edit">Save</button>
-        <button class="element__button delete"><img class="button__image" src="./remove.svg" alt="delete button"></button>
+        <input class="list__checkbox-input each-input" type="checkbox">
+        <label class="list__task input-label">Go Shopping</label>
+        <input class="list__task text-input each-input" type="text" value="Go Shopping">
+        <button class="list__button edit">Save</button>
+        <button class="list__button delete"><img class="button__image" src="./remove.svg" alt="delete button"></button>
       </li>
     </ul>
-    <h3 class="todo__header">Completed</h3>
-    <ul class="todo__list completed-tasks">
+    <h3 class="header">Completed</h3>
+    <ul class="list completed-tasks">
       <li class="list__element">
-        <input class="element__checkbox-input each-input" type="checkbox" checked>
-        <label class="element__task input-label">See the Doctor</label>
-        <input class="element__task text-input each-input" type="text">
-        <button class="element__button edit">Edit</button>
-        <button class="element__button delete"><img class="button__image" src="./remove.svg" alt="delete button"></button>
+        <input class="list__checkbox-input each-input" type="checkbox" checked>
+        <label class="list__task input-label">See the Doctor</label>
+        <input class="list__task text-input each-input" type="text">
+        <button class="list__button edit">Edit</button>
+        <button class="list__button delete"><img class="button__image" src="./remove.svg" alt="delete button"></button>
       </li>
     </ul>
   </main>
